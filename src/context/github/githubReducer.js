@@ -5,7 +5,7 @@ import {
     GET_USER_AND_REPOS
   } from '../types';
 
-  export default (state, action) => {
+  const GithubReducer = (state, action) => {
 
     switch(action.type) {
        case SET_LOADING:
@@ -36,7 +36,6 @@ import {
         return state;
 
     }
-
-
   }
 
+export default GithubReducer;
